@@ -241,7 +241,7 @@ function getParameterValue(req, parameter){ //TODO handle: body, form, formData,
 }
 */
 function getParameterValue(req, parameter) {
-  var defaultVal = parameter.default;
+  var defaultVal = parameter.schema.default;
   var paramLocation = parameter.in;
   var val;
 
